@@ -1,0 +1,14 @@
+
+table, th, td {
+  border: 1px solid rgb(36, 12, 30);
+}
+
+body {
+  background-color: rgb(241, 155, 208);
+}
+h1 {
+  color: rgb(105, 26, 82);
+}
+p {
+  color: rgb(39, 21, 32);
+}
