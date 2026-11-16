@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP - Tom & Sara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="venue.html">Venue & Direction</a>
+        <a href="rsvp.html">RSVP</a>
+    </nav>
+
+    <!-- RSVP Section -->
+    <main class="page-container">
+
+        <h1>RSVP</h1>
+
+        <p class="welcome">
+            YOU ARE INVITED!
+        </p>
+
+        <h2>Tom & Sara's Wedding</h2>
+
+        <p>
+            We would love to celebrate our special day with you!
+            Please complete the form below to confirm your attendance.
+        </p>
+
+        <!-- RSVP Form -->
+        <form id="rsvpForm" class="rsvp-form">
+
+            <label for="guestName">Your Name:</label>
+            <input type="text" id="guestName"
+                placeholder="Enter your full name" required>
+
+            <label for="guestEmail">Email Address:</label>
+            <input type="email" id="guestEmail"
+                placeholder="Enter your email" required>
+
+            <label for="guestNumber">Number of Guests:</label>
+            <input type="number" id="guestNumber"
+                min="1" max="10" value="1" required>
+
+            <p><strong>Will you attend our wedding?</strong></p>
+
+            <label class="radio-option">
+                <input type="radio" name="attendance"
+                    value="Yes" required>
+                Yes, I will attend!
+            </label>
+
+            <label class="radio-option">
+                <input type="radio" name="attendance"
+                    value="No">
+                Sorry, I cannot attend.
+            </label>
+
+            <button type="submit" class="main-button">
+                Submit RSVP
+            </button>
+
+        </form>
+
+        <!-- Thank You Message -->
+        <div id="thankYouMessage" class="thank-you">
+            <h2>Thank You! ♥</h2>
+            <p>
+                Thank you for responding to our invitation.
+                We appreciate your response and look forward
+                to celebrating with you!
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>With Love, Tom & Sara ♥</p>
+    </footer>
+
+    <!-- Form Submission Script -->
+    <script>
+        const form = document.getElementById("rsvpForm");
+
+        const message =
+            document.getElementById("thankYouMessage");
+
+        form.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            form.style.display = "none";
+
+            message.style.display = "block";
+
+        });
+    </script>
+
+</body>
+</html>

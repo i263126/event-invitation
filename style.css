@@ -1,14 +1,225 @@
 
-table, th, td {
-  border: 1px solid rgb(36, 12, 30);
+/* General Website Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 155, 208);
+    color: rgb(39, 21, 32);
+    text-align: center;
 }
 
-body {
-  background-color: rgb(241, 155, 208);
+/* Navigation Bar */
+.navbar {
+    background-color: #fce4ec;
+    padding: 18px;
 }
+
+.navbar a {
+    color: rgb(105, 26, 82);
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+/* Main Home Section */
+.home-container {
+    background-color: #fff0f5;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 35px 20px;
+    border: 2px solid rgb(105, 26, 82);
+    border-radius: 15px;
+}
+
+/* Main Heading */
 h1 {
-  color: rgb(105, 26, 82);
+    color: rgb(105, 26, 82);
+    font-size: 45px;
 }
+
+/* Subheading */
+h2 {
+    color: #a64d79;
+}
+
+/* Paragraphs */
 p {
-  color: rgb(39, 21, 32);
+    color: rgb(39, 21, 32);
+}
+
+/* Wedding Details */
+.wedding-details {
+    background-color: #f8dce8;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Wedding Picture */
+.wedding-image {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 15px;
+    border: 3px solid rgb(105, 26, 82);
+}
+
+/* Invitation Text */
+.invitation {
+    font-size: 18px;
+    margin: 25px;
+}
+
+/* Buttons */
+.main-button {
+    display: inline-block;
+    background-color: rgb(105, 26, 82);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 15px;
+}
+
+/* Footer */
+footer {
+    padding: 15px;
+    font-weight: bold;
+}
+
+/* Mobile Screen Styling */
+@media (max-width: 600px) {
+    .navbar a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .home-container {
+        margin: 15px;
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .wedding-image {
+        width: 95%;
+    }
+}
+
+/* Schedule and Other Pages */
+.page-container {
+    background-color: #fff0f5;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 35px 20px;
+    border: 2px solid rgb(105, 26, 82);
+    border-radius: 15px;
+}
+
+/* Schedule Table */
+.schedule-table {
+    width: 85%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #fce4ec;
+}
+
+.schedule-table th {
+    background-color: rgb(105, 26, 82);
+    color: rgb(236, 211, 211);
+    padding: 15px;
+}
+
+.schedule-table td {
+    padding: 15px;
+    color: rgb(39, 21, 32);
+}
+
+.schedule-table th,
+.schedule-table td {
+    border: 1px solid rgb(105, 26, 82);
+}
+
+/* Venue Page Styling */
+
+.venue-details {
+    background-color: #f8dce8;
+    border: 2px solid rgb(105, 26, 82);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 25px;
+}
+
+.venue-details h2 {
+    color: rgb(105, 26, 82);
+}
+
+.venue-details p {
+    font-size: 17px;
+    margin: 15px;
+}
+
+.main-button:hover {
+    background-color: #a64d79;
+}
+
+/* RSVP Form Styling */
+
+.rsvp-form {
+    max-width: 500px;
+    margin: 30px auto;
+    text-align: left;
+    background-color: #f8dce8;
+    padding: 25px;
+    border: 2px solid rgb(105, 26, 82);
+    border-radius: 12px;
+}
+
+.rsvp-form label {
+    display: block;
+    margin-top: 15px;
+    color: rgb(105, 26, 82);
+    font-weight: bold;
+}
+
+.rsvp-form input[type="text"],
+.rsvp-form input[type="email"],
+.rsvp-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    box-sizing: border-box;
+    border: 1px solid rgb(105, 26, 82);
+    border-radius: 6px;
+}
+
+.rsvp-form .radio-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0;
+}
+
+.rsvp-form input[type="radio"] {
+    accent-color: rgb(105, 26, 82);
+}
+
+.rsvp-form button {
+    display: block;
+    margin: 25px auto 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.thank-you {
+    display: none;
+    background-color: #f8dce8;
+    border: 2px solid rgb(105, 26, 82);
+    border-radius: 12px;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 500px;
 }
